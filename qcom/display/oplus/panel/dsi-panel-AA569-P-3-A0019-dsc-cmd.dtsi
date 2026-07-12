@@ -2505,7 +2505,7 @@
 	oplus,dsi-btb-sn-read-count= <32>;
 
 	/* adfr config */
-	oplus,adfr-config = <0x1041>;  // 0b0001'0000'0100'0001
+	oplus,adfr-config = <0x1051>;  // 0b0001'0000'0101'0001, stock 0x1041 + bit(4) idle mode: the kernel self-drives min fps on this ROM, idle mode clamps the active floor to oplus,adfr-idle-off-min-fps and drops to the table minimum only in mipi idle
 	oplus,adfr-test-te-gpio = <&tlmm 85 0>;
 	/* just for qsync enable */
 	qcom,qsync-enable;
